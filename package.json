@@ -1,0 +1,22 @@
+{
+  "name": "obstructed.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogondim/obstructed.js.git"
+  },
+  "author": "Caio Gondim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiogondim/obstructed.js/issues"
+  },
+  "homepage": "https://github.com/caiogondim/obstructed.js#readme"
+}
