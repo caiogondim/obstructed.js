@@ -1,5 +1,7 @@
+<img src="http://rawgit.com/caiogondim/obstructed.js/master/img/logo.svg">
+
 # obstructed.js
-:busstop:
+
 
 ## Credits
 - Icon by Edward Boatman
