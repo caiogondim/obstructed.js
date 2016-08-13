@@ -17,7 +17,7 @@
     "url": "git+https://github.com/caiogondim/obstructed.js.git"
   },
   "author": "Caio Gondim",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/caiogondim/obstructed.js/issues"
   },
