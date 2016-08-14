@@ -21,6 +21,7 @@
   "homepage": "https://github.com/caiogondim/obstructed.js#readme",
   "devDependencies": {
     "blocked": "^1.2.1",
-    "logdown": "^1.2.8"
+    "logdown": "^1.2.8",
+    "msleep": "^1.0.3"
   }
 }

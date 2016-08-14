@@ -5,10 +5,10 @@ const obstructed = (callback, opts = {threshold: 10}) => {
   const timeToCheckMainThread = 100
 
   return setInterval(() => {
-    const delta = performanceNow - lastExecuted
+    const delta = performanceNow() - lastExecuted
 
     if ((delta - timeToCheckMainThread) > opts.threshold) {
-      callback(delta - timeToCheckMainThread)
+      callback(Math.round(delta - timeToCheckMainThread))
     }
 
     lastExecuted = performanceNow()
