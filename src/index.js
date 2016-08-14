@@ -1,9 +1,18 @@
-const browserImplementation = require('./browser')
-const nodeImplementation = require('./node')
-const isBrowser = require('util/is-browser')
+const performanceNow = require('./util/performance-now')
 
-if (isBrowser()) {
-  module.exports = browserImplementation
-} else {
-  module.exports = nodeImplementation
+const obstructed = (callback, opts = {threshold: 10}) => {
+  let lastExecuted = performanceNow()
+  const timeToCheckMainThread = 100
+
+  return setInterval(() => {
+    const delta = performanceNow - lastExecuted
+
+    if ((delta - timeToCheckMainThread) > opts.threshold) {
+      callback(delta - timeToCheckMainThread)
+    }
+
+    lastExecuted = performanceNow()
+  }, timeToCheckMainThread)
 }
+
+module.exports = obstructed
