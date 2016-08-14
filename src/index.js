@@ -1,16 +1,9 @@
-const obstructed = (callback, opts = {threshold: 10}) => {
-  let lastExecuted = Date.now()
-  const timeToCheckMainThread = 100
+const browserImplementation = require('./browser')
+const nodeImplementation = require('./node')
+const isBrowser = require('util/is-browser')
 
-  return setInterval(() => {
-    const delta = Date.now() - lastExecuted
-    
-    if ((delta - timeToCheckMainThread) > opts.threshold) {
-      callback(delta - timeToCheckMainThread)
-    }
-    
-    lastExecuted = Date.now()
-  }, timeToCheckMainThread)
+if (isBrowser()) {
+  module.exports = browserImplementation
+} else {
+  module.exports = nodeImplementation
 }
-
-module.exports = obstructed
