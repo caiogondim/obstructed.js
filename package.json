@@ -24,5 +24,8 @@
     "logdown": "^1.2.8",
     "msleep": "^1.0.3",
     "tap": "^6.3.2"
+  },
+  "dependencies": {
+    "performance-now": "^0.2.0"
   }
 }

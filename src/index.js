@@ -1,4 +1,4 @@
-const performanceNow = require('./util/performance-now')
+const performanceNow = require('performance-now')
 
 const obstructed = (callback, opts = {threshold: 10}) => {
   let lastExecuted = performanceNow()
