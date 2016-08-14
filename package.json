@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/**/*.js"
+    "test": "tap test/**/*.js --coverage"
   },
   "repository": {
     "type": "git",
