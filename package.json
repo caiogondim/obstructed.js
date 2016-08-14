@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/**/*.js --coverage"
+    "test": "tap test/**/*.js --coverage",
+    "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
+    "test:lint:fix": "standard 'src/**/*.js' 'test/**/*.js' --fix",
+    "test:all": "npm run test:lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
     "blocked": "^1.2.1",
     "logdown": "^1.2.8",
     "msleep": "^1.0.3",
+    "standard": "^7.1.2",
     "tap": "^6.3.2"
   },
   "dependencies": {

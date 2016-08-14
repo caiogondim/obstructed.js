@@ -12,7 +12,7 @@ tap.test('should run callback if main thread is obstructed', (test) => {
     test.end()
   })
 
-  console.log(`:`)
+  console.log(':')
   debugMsleep.log('blocking thread')
   msleep(110)
   debugMsleep.log('releasing thread')
@@ -22,10 +22,10 @@ tap.test('should not run callback if main thread is obstructed but threshold is 
   let didCallbackRun = false
 
   const obstructedTimer = obstructed((time) => {
-    let didCallbackRun = true
+    didCallbackRun = true
   }, {threshold: 100})
 
-  console.log(`:`)
+  console.log(':')
   debugMsleep.log('blocking thread')
   msleep(50)
   debugMsleep.log('releasing thread')
