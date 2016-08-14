@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "tap test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "blocked": "^1.2.1",
     "logdown": "^1.2.8",
-    "msleep": "^1.0.3"
+    "msleep": "^1.0.3",
+    "tap": "^6.3.2"
   }
 }
