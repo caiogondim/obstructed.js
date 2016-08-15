@@ -51,6 +51,25 @@ reference it on your browser (drop it) and use it.
   })
 </script>
 ```
+## Support
+
+### Desktop browsers
+
+| ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) |  ![Edge](https://raw.github.com/alrra/browser-logos/master/edge/edge_48x48.png) |  ![Brave](https://raw.github.com/alrra/browser-logos/master/brave/brave_48x48.png) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Latest | 6+ | Latest | Latest | Latest | Latest | Latest |
+
+### Mobile browsers
+
+| ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari-ios/safari-ios_48x48.png) | ![Android Browser](https://raw.github.com/alrra/browser-logos/master/android/android_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) |  ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![UC](https://raw.github.com/alrra/browser-logos/master/uc/uc_48x48.png) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Latest | 6+ | 4.0+ | 8+ | Latest | Latest | Latest |
+
+### Server
+
+| <a href="https://nodejs.org"><img height=48 src="https://raw.githubusercontent.com/caiogondim/javascript-server-side-logos/master/node.js/standard/454x128.png"></a> |
+| --- |
+| 0.10+ ✔ |
 
 ## Credits
 - Icon by Edward Boatman
