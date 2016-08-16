@@ -1,12 +1,12 @@
-const tap = require('tap')
-const logdown = require('logdown')
-const msleep = require('msleep')
-const obstructed = require('../src/index')
+var tap = require('tap')
+var logdown = require('logdown')
+var msleep = require('msleep')
+var obstructed = require('../src/index')
 
-const debugMsleep = logdown({prefix: 'msleep'})
+var debugMsleep = logdown({prefix: 'msleep'})
 
-tap.test('should run callback if main thread is obstructed', (test) => {
-  const obstructedTimer = obstructed((time) => {
+tap.test('should run callback if main thread is obstructed', function (test) {
+  var obstructedTimer = obstructed(function (time) {
     clearInterval(obstructedTimer)
 
     test.end()
@@ -18,10 +18,10 @@ tap.test('should run callback if main thread is obstructed', (test) => {
   debugMsleep.log('releasing thread')
 })
 
-tap.test('should not run callback if main thread is obstructed but threshold is higher', (test) => {
+tap.test('should not run callback if main thread is obstructed but threshold is higher', function (test) {
   let didCallbackRun = false
 
-  const obstructedTimer = obstructed((time) => {
+  var obstructedTimer = obstructed(function (time) {
     didCallbackRun = true
   }, {threshold: 100})
 
@@ -30,7 +30,7 @@ tap.test('should not run callback if main thread is obstructed but threshold is 
   msleep(50)
   debugMsleep.log('releasing thread')
 
-  setTimeout(() => {
+  setTimeout(function () {
     clearInterval(obstructedTimer)
     test.ok(!didCallbackRun)
     test.end()

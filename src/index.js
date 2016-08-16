@@ -1,11 +1,14 @@
-const performanceNow = require('performance-now')
+var performanceNow = require('performance-now')
 
-const obstructed = (callback, opts = {threshold: 10}) => {
-  let lastExecuted = performanceNow()
-  const timeToCheckMainThread = 100
+var obstructed = function (callback, opts) {
+  opts = opts || {}
+  opts.threshold = opts.threshold || 10
 
-  return setInterval(() => {
-    const delta = performanceNow() - lastExecuted
+  var lastExecuted = performanceNow()
+  var timeToCheckMainThread = 100
+
+  return setInterval(function () {
+    var delta = performanceNow() - lastExecuted
 
     if ((delta - timeToCheckMainThread) > opts.threshold) {
       callback(Math.round(delta - timeToCheckMainThread))
