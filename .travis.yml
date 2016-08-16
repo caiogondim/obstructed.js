@@ -1,5 +1,7 @@
 sudo: false
 
+script: npm test:all
+
 language: node_js
 
 node_js:
