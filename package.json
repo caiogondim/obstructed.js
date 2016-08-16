@@ -11,7 +11,9 @@
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard 'src/**/*.js' 'test/**/*.js' --fix",
     "test:all": "npm run test:lint && npm run test",
-    "build": "webpack && ./tasks/write-banner"
+    "build": "webpack && ./tasks/write-banner",
+    "build:min": "webpack && uglifyjs dist/obstructed.js -c -m -o dist/obstructed.min.js && ./tasks/write-banner",
+    "build:all": "npm run build && npm run build:min"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "msleep": "^1.0.3",
     "standard": "^7.1.2",
     "tap": "^6.3.2",
+    "uglify-js": "^2.7.1",
     "webpack": "^1.13.1"
   },
   "dependencies": {

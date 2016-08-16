@@ -14,7 +14,8 @@ const banner = `/**
 `
 
 ;[
-  'dist/obstructed.js'
+  'dist/obstructed.js',
+  'dist/obstructed.min.js'
 ].forEach(file => {
   const distSrc = fs.readFileSync(
     file,
