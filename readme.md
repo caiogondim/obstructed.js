@@ -70,7 +70,7 @@ reference it on your browser (drop it) and use it.
 
 | <a href="https://nodejs.org"><img height=48 src="https://raw.githubusercontent.com/caiogondim/javascript-server-side-logos/master/node.js/standard/454x128.png"></a> |
 | --- |
-| 0.10+ ✔ |
+| 0.12+ ✔ |
 
 ## Credits
 - Icon by Edward Boatman
