@@ -13,7 +13,9 @@
     "test:all": "npm run test:lint && npm run test",
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/obstructed.js -c -m -o dist/obstructed.min.js && ./tasks/write-banner",
-    "build:all": "npm run build && npm run build:min"
+    "build:all": "npm run build && npm run build:min",
+    "preversion": "npm run test:all",
+    "version": "npm run build:all && git add dist/"
   },
   "repository": {
     "type": "git",
