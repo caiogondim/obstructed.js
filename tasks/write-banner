@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const packageJson = require('../package.json')
+
+const banner = `/**
+ * ${packageJson.name} - ${packageJson.description}
+ *
+ * @version ${packageJson.version}
+ * @link ${packageJson.homepage}
+ * @author ${packageJson.author}
+ * @license ${packageJson.license}
+ */
+`
+
+;[
+  'dist/obstructed.js'
+].forEach(file => {
+  const distSrc = fs.readFileSync(
+    file,
+    {
+      encoding: 'utf8'
+    }
+  )
+
+  fs.appendFileSync(
+    file,
+    `${banner}${distSrc}`,
+    {
+      flag: 'w',
+      encoding: 'utf8'
+    }
+  )
+})

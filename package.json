@@ -10,7 +10,8 @@
     "test": "tap test/**/*.js --coverage",
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard 'src/**/*.js' 'test/**/*.js' --fix",
-    "test:all": "npm run test:lint && npm run test"
+    "test:all": "npm run test:lint && npm run test",
+    "build": "webpack && ./tasks/write-banner"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
     "logdown": "^1.2.8",
     "msleep": "^1.0.3",
     "standard": "^7.1.2",
-    "tap": "^6.3.2"
+    "tap": "^6.3.2",
+    "webpack": "^1.13.1"
   },
   "dependencies": {
     "performance-now": "^0.2.0"
