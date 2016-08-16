@@ -19,7 +19,7 @@ tap.test('should run callback if main thread is obstructed', function (test) {
 })
 
 tap.test('should not run callback if main thread is obstructed but threshold is higher', function (test) {
-  let didCallbackRun = false
+  var didCallbackRun = false
 
   var obstructedTimer = obstructed(function (time) {
     didCallbackRun = true
