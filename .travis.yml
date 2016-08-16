@@ -1,6 +1,6 @@
 sudo: false
 
-script: npm test:all
+script: npm run test:all
 
 language: node_js
 
