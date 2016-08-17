@@ -1,5 +1,5 @@
 {
-  "name": "obstructed.js",
+  "name": "obstructed",
   "version": "1.0.1",
   "description": "Checks if the main thread is busy, executing a callback whenever it happens.",
   "main": "src/index.js",
