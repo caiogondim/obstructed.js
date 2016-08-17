@@ -11,6 +11,7 @@
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard 'src/**/*.js' 'test/**/*.js' --fix",
     "test:all": "npm run test:lint && npm run test",
+    "posttest": "tap --coverage-report=lcov | codecov",
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/obstructed.js -c -m -o dist/obstructed.min.js && ./tasks/write-banner",
     "build:all": "npm run build && npm run build:min",
@@ -29,6 +30,7 @@
   "homepage": "https://github.com/caiogondim/obstructed.js#readme",
   "devDependencies": {
     "blocked": "^1.2.1",
+    "codecov": "^1.0.1",
     "logdown": "^1.2.8",
     "msleep": "^1.0.3",
     "standard": "^7.1.2",
