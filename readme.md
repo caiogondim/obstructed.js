@@ -1,7 +1,7 @@
 <img src="http://rawgit.com/caiogondim/obstructed.js/master/img/logo.svg">
 
 # obstructed.js
-<img src="http://travis-ci.org/caiogondim/obstructed.js.svg?branch=master" alt="Travis CI"> [![codecov](https://codecov.io/gh/caiogondim/obstructed.js/branch/master/graph/badge.svg)](https://codecov.io/gh/caiogondim/obstructed.js)
+<img src="http://travis-ci.org/caiogondim/obstructed.js.svg?branch=master" alt="Travis CI"> [![codecov](https://codecov.io/gh/caiogondim/obstructed.js/branch/master/graph/badge.svg)](https://codecov.io/gh/caiogondim/obstructed.js) <img src="https://david-dm.org/caiogondim/obstructed.js/status.svg" alt="dependencies status"> <img src="https://david-dm.org/caiogondim/obstructed.js/dev-status.svg" alt="dev dependencies status">
 
 obstructed.js checks if the main thread is busy, executing a callback whenever
 it happens. It runs on the browser and on the server. The API is compatible with
