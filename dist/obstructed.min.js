@@ -1,7 +1,7 @@
 /**
  * obstructed - Checks if the main thread is busy, executing a callback whenever it happens.
  *
- * @version 1.0.2
+ * @version 1.0.3
  * @link https://github.com/caiogondim/obstructed.js#readme
  * @author Caio Gondim
  * @license MIT
