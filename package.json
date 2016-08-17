@@ -1,6 +1,6 @@
 {
   "name": "obstructed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks if the main thread is busy, executing a callback whenever it happens.",
   "main": "src/index.js",
   "directories": {
